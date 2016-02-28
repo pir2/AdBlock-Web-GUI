@@ -1,4 +1,3 @@
-
 ### Settings ###
 tomatolink=1
 dnsmasq_logqueries=1
@@ -15,20 +14,21 @@ CONF="/etc/dnsmasq.custom"    ## dnsmasq custom config (must be sourced by dnsma
 ## MVPS HOSTS (~600k) [default]:
 SOURCES="$SOURCES http://winhelp2002.mvps.org/hosts.txt"
 ## pgl.yoyo.org (~70k) [default]:
-#SOURCES="$SOURCES http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext"
+SOURCES="$SOURCES http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext"
 ## Hosts File Project (~3M!):
-#SOURCES="$SOURCES http://hostsfile.mine.nu/Hosts"
+SOURCES="$SOURCES http://hostsfile.mine.nu/Hosts"
 ## The Cameleon Project (~600k):
-#SOURCES="$SOURCES http://sysctl.org/cameleon/hosts"
+SOURCES="$SOURCES http://sysctl.org/cameleon/hosts"
 ## AdAway mobile ads (~20k):
-#SOURCES="$SOURCES http://adaway.org/hosts.txt"
+SOURCES="$SOURCES http://adaway.org/hosts.txt"
 ## hpHosts ad/tracking servers (~400k):
-#SOURCES="$SOURCES http://hosts-file.net/ad_servers.asp"
+SOURCES="$SOURCES http://hosts-file.net/.%5Cad_servers.txt"
 ## hpHosts ad/tracking/malicious servers (~6M! replaces hpHosts ad/tracking list):
-#SOURCES="$SOURCES http://hosts-file.net/download/hosts.txt, http://hosts-file.net/hphosts-partial.asp"
+SOURCES="$SOURCES http://hosts-file.net/download/hosts.txt, http://hosts-file.net/hphosts-partial.txt"
 ## MalwareDomainList.com (~40k):
-#SOURCES="$SOURCES http://www.malwaredomainlist.com/hostslist/hosts.txt"
-
+SOURCES="$SOURCES http://www.malwaredomainlist.com/hostslist/hosts.txt"
+##PiHole
+SOURCES="$SOURCES http://10.28.0.135/gravity.list"
 
 ### Blacklist additional sites ###
 ## (add hostnames inside the quotes, space-separated, without http://) ##
